@@ -126,9 +126,7 @@ export default function Projects() {
                     </h3>
                     <p className="text-navy-600 text-sm leading-relaxed mb-6 line-clamp-3 text-justify h-[60px] overflow-hidden">
                       {project.description}
-                    </p>
-
-                    <div className="mt-auto">
+                    </p>                    <div className="mt-auto">
                       <div className="flex flex-wrap gap-2">
                         {project.tags.map((t: string) => (
                           <span key={t} className="px-3 py-1 text-[10px] font-bold bg-navy-50 text-navy-700 border border-navy-100 rounded-lg uppercase tracking-tighter shadow-sm transition-colors group-hover:bg-white">

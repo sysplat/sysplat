@@ -9,6 +9,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
+import Products from "@/components/sections/Products";
 import Services from "@/components/sections/Services";
 import About from "@/components/sections/About";
 import Projects from "@/components/sections/Projects";
@@ -26,6 +27,7 @@ export default function HomePage() {
       {/* Main Content */}
       <main>
         <Hero />
+        <Products />
         <Services />
         <About />
         <Projects />
