@@ -30,7 +30,7 @@ export default function HomePage() {
         <Products />
         <Services />
         <About />
-        <Projects />
+        {/* <Projects /> */}
         <Testimonials />
         {/* <Blog /> */}
         <Contact />

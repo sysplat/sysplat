@@ -116,7 +116,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
-      const sections = ["home", "products", "services", "about", "projects", "testimonials", "contact"];
+      const sections = ["home", "products", "services", "about", "testimonials", "contact"];
       for (const section of [...sections].reverse()) {
         const el = document.getElementById(section);
         if (el && el.getBoundingClientRect().top <= 100) {
@@ -171,7 +171,7 @@ export default function Navbar() {
           </a>
           <NavDropdown label="Products" items={PRODUCTS} onItemClick={() => setIsMobileOpen(false)} />
           <NavDropdown label="Platforms" items={PLATFORMS} onItemClick={() => setIsMobileOpen(false)} />
-          {["About", "Projects", "Testimonials", "Contact"].map((label) => {
+          {["About", "Testimonials", "Contact"].map((label) => {
             const id = label.toLowerCase();
             const isActive = activeSection === id;
             return (
@@ -263,7 +263,7 @@ export default function Navbar() {
                   </a>
                 ))}
               </div>
-              {["About", "Projects", "Testimonials", "Contact"].map((label) => (
+              {["About", "Testimonials", "Contact"].map((label) => (
                 <a
                   key={label}
                   href={`#${label.toLowerCase()}`}

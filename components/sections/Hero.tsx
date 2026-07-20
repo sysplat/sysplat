@@ -97,7 +97,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center gap-4 mb-10 w-full sm:w-auto"
           >
-            <a href="#projects" className="w-full sm:w-auto px-8 py-4 text-sm font-bold text-white rounded-xl gradient-primary gradient-primary-hover shadow-xl shadow-crimson-600/20 hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2">
+            <a href="#products" className="w-full sm:w-auto px-8 py-4 text-sm font-bold text-white rounded-xl gradient-primary gradient-primary-hover shadow-xl shadow-crimson-600/20 hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2">
               View Our Work <ArrowRight className="w-4 h-4" />
             </a>
             <a href="#contact" className="w-full sm:w-auto px-8 py-4 text-sm font-bold text-navy-900 rounded-xl bg-white border border-navy-200 shadow-sm hover:border-navy-300 hover:-translate-y-0.5 transition-all duration-300 text-center">

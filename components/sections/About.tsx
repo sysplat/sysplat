@@ -109,7 +109,7 @@ export default function About() {
               transition={{ delay: reduce ? 0 : 0.2, duration: reduce ? 0 : 0.5 }}
             >
               <a
-                href="#projects"
+                href="#products"
                 className="group inline-flex items-center gap-3 px-8 py-4 text-white rounded-2xl
                   bg-gradient-to-r from-crimson-500 to-crimson-600
                   hover:from-crimson-600 hover:to-crimson-700
