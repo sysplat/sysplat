@@ -113,7 +113,7 @@ export default function Products() {
   const current = PRODUCTS.find((p) => p.id === activeTab)!;
 
   return (
-    <section id="products" className="section-padding bg-navy-50">
+    <section id="products" className="section-padding bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <SectionHeading title="Our Core Products" highlight="Products" subtitle="Explore" />
 

@@ -59,7 +59,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-20 md:py-32 bg-navy-50 relative overflow-hidden"
+      className="py-20 md:py-32 bg-white relative overflow-hidden"
       aria-labelledby="about-heading"
     >
       <div className="absolute inset-0 pointer-events-none opacity-[0.35] dot-pattern" />
