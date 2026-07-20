@@ -185,7 +185,7 @@ export default function AdminSidebar({
         >
           <X className="w-5 h-5" />
         </button>
-        <NavContent />
+        {NavContent()}
       </aside>
 
       {/* Desktop Sidebar */}
@@ -196,7 +196,7 @@ export default function AdminSidebar({
           ${collapsed ? "w-20" : "w-64"}
         `}
       >
-        <NavContent />
+        {NavContent()}
       </aside>
     </>
   );

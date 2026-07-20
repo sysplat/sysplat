@@ -24,8 +24,9 @@ export default function Blog() {
 
         if (error) throw error;
         if (data) setArticles(data as BlogArticle[]);
-      } catch (err: any) {
-        console.error("Error fetching articles:", err?.message || JSON.stringify(err));
+      } catch (err) {
+        const error = err as Error;
+        console.error("Error fetching articles:", error?.message || JSON.stringify(err));
       } finally {
         setIsLoading(false);
       }
