@@ -40,7 +40,7 @@ export default function HomePage() {
       <Footer />
 
       {/* Floating AI Chat Widget */}
-      <ChatWidget />
+      {/* <ChatWidget /> */}
     </>
   );
 }
