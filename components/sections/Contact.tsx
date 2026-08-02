@@ -7,6 +7,7 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import toast from "react-hot-toast";
 import { useShouldReduceMotion } from "@/lib/hooks";
+import { SOCIAL_LINKS } from "@/lib/constants";
 
 const inputCls = `w-full px-4 py-3 text-sm text-navy-900 bg-white rounded-xl
   border border-slate-200 outline-none
@@ -23,7 +24,7 @@ export default function Contact() {
     location: string;
     working_hours: { day: string; time: string }[];
   }>({
-    email: "sysplatco@gmail.com",
+    email: SOCIAL_LINKS.email,
     phone: "",
     location: "Vancouver, BC",
     working_hours: [
@@ -47,7 +48,8 @@ export default function Contact() {
 
         if (data) {
           setContactData({
-            email: data.email || "sysplatco@gmail.com",
+            // Public contact email is owned by SOCIAL_LINKS (Supabase row may be stale)
+            email: SOCIAL_LINKS.email,
             phone: data.phone || "",
             location: data.location || "Vancouver, BC",
             working_hours: data.working_hours || [

@@ -32,7 +32,8 @@ export default function Footer() {
 
         if (data) {
           setSettingsData({
-            email: data.email || SOCIAL_LINKS.email,
+            // Public contact email is owned by SOCIAL_LINKS (Supabase row may be stale)
+            email: SOCIAL_LINKS.email,
             phone: data.phone || "",
             location: data.location || "Vancouver, BC",
             github_url: data.github_url || SOCIAL_LINKS.github,
