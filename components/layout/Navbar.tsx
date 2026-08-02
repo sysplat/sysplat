@@ -9,10 +9,10 @@ const CAL_LINK = process.env.NEXT_PUBLIC_CAL_LINK || "";
 
 const PRODUCTS = [
   {
-    label: "QlessQ",
+    label: "QPlatform",
     sub: "Queue Management & Appointment Booking",
     icon: QrCode,
-    href: "https://qlessq.sysplat.com",
+    href: "https://queue.sysplat.com",
     external: true,
   },
   {

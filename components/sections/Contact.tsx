@@ -23,7 +23,7 @@ export default function Contact() {
     location: string;
     working_hours: { day: string; time: string }[];
   }>({
-    email: "contact@sysplat.com",
+    email: "sysplatco@gmail.com",
     phone: "",
     location: "Vancouver, BC",
     working_hours: [
@@ -47,7 +47,7 @@ export default function Contact() {
 
         if (data) {
           setContactData({
-            email: data.email || "contact@sysplat.com",
+            email: data.email || "sysplatco@gmail.com",
             phone: data.phone || "",
             location: data.location || "Vancouver, BC",
             working_hours: data.working_hours || [

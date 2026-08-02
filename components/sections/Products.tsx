@@ -8,8 +8,8 @@ import { useShouldReduceMotion } from "@/lib/hooks";
 
 const PRODUCTS = [
   {
-    id: "qlessq",
-    title: "QlessQ",
+    id: "qplatform",
+    title: "QPlatform",
     subtitle: "Queue Management System",
     icon: QrCode,
     description:
@@ -21,7 +21,7 @@ const PRODUCTS = [
       "Configurable Wait Guidance",
       "SMS & Email Notifications"
     ],
-    live_url: "https://qlessq.sysplat.com",
+    live_url: "https://queue.sysplat.com",
     bg: "from-blue-600 to-indigo-800",
     shadow: "shadow-blue-600/30",
     mockup: (
@@ -109,7 +109,7 @@ const PRODUCTS = [
 
 export default function Products() {
   const reduce = useShouldReduceMotion();
-  const [activeTab, setActiveTab] = useState("qlessq");
+  const [activeTab, setActiveTab] = useState("qplatform");
   const current = PRODUCTS.find((p) => p.id === activeTab)!;
 
   return (

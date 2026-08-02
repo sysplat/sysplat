@@ -166,7 +166,7 @@ export default function Hero() {
 
                 <div className="space-y-3">
                   {[
-                    { label: "qlessq.sysplat.com", desc: "Live Wait guidance active", status: "Healthy" },
+                    { label: "queue.sysplat.com", desc: "Live Wait guidance active", status: "Healthy" },
                     { label: "lms.sysplat.com", desc: "Loyalty gamification server", status: "Healthy" },
                     { label: "ai.sysplat.com", desc: "Support Agent Model v2", status: "Idle" },
                   ].map((srv) => (
